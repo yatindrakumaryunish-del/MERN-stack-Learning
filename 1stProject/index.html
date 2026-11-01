@@ -1,28 +1,126 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky The Dhaba </title>
+    <title>Lucky The Dhaba</title>
+
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="naveContainer">
-         <ul>
-            <li> 
-                   <P>Lucky The Dhaba</P>
-            </li>
-            <li>
-                <div>
-                    <a href="#">Home</a>
-                    <a href="#">contact</a>
-                    <a href="#">About</a>
 
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Lucky <span>The Dhaba</span></h1>
 
-                </div>
-            </li>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#menu" class="btn">Order Now</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h3>WELCOME TO LUCKY THE DHABA</h3>
+
+            <h1>Feel The Taste Of <span>Punjab!</span></h1>
+
+            <p>
+                Delicious Indian food made with love.
+                Enjoy authentic flavours, fresh ingredients
+                and traditional dhaba-style cooking.
+            </p>
+
+            <a href="#menu" class="btn">Explore Menu</a>
         </div>
-    </div>
-    
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <div class="about-content">
+            <h2>About <span>Our Dhaba</span></h2>
+
+            <p>
+                Lucky The Dhaba brings you the authentic
+                taste of Indian cuisine. From spicy Punjabi
+                dishes to delicious traditional meals,
+                every bite gives you a memorable experience.
+            </p>
+
+            <a href="#contact" class="btn">Know More</a>
+        </div>
+
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=700"
+                 alt="Indian food">
+        </div>
+
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+
+        <h2>Our Special <span>Menu</span></h2>
+        <p class="subtitle">Taste the best food in town</p>
+
+        <div class="menu-container">
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500"
+                     alt="Butter Chicken">
+                <h3>Butter Chicken</h3>
+                <p>Rich and creamy Punjabi curry.</p>
+                <h4>₹250</h4>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500"
+                     alt="Paneer Curry">
+                <h3>Paneer Masala</h3>
+                <p>Fresh paneer in spicy gravy.</p>
+                <h4>₹180</h4>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=500"
+                     alt="Indian Thali">
+                <h3>Special Thali</h3>
+                <p>A complete traditional Indian meal.</p>
+                <h4>₹150</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <h2>Visit <span>Our Dhaba</span></h2>
+
+        <p>Come and enjoy delicious food with your family!</p>
+
+        <p>📍 Location: Gandhinagr Gujrat</p>
+        <p>📞 Phone: +91 7856915345</p>
+        <p>📞 Phone: +91 7261801431</p>
+
+        <a href="#home" class="btn">Back To Top</a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Lucky The Dhaba. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>

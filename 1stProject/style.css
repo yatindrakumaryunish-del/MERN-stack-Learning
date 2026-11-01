@@ -1,0 +1,249 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #151515;
+    color: white;
+}
+
+/* Navbar */
+header {
+    background-color: #202020;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: orange;
+    font-size: 28px;
+}
+
+.logo span {
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: orange;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+    transform: translateY(-3px);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h3 {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span,
+.about h2 span,
+.menu h2 span,
+.contact h2 span {
+    color: orange;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* About Section */
+.about {
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Menu Section */
+.menu {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #202020;
+}
+
+.menu h2 {
+    font-size: 35px;
+}
+
+.subtitle {
+    color: #ccc;
+    margin: 15px 0 40px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    background-color: #303030;
+    width: 280px;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-card h3 {
+    margin: 15px 0;
+}
+
+.food-card p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.food-card h4 {
+    color: orange;
+    font-size: 22px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.contact h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 15px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #202020;
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
